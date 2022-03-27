@@ -77,12 +77,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((dbCategoryData) => {
-      if (!dbCategoryData) {
-        res.status(404).json({ message: 'No category found with this id' });
+    .then((dbTagData) => {
+      if (!dbTagData) {
+        res.status(404).json({ message: 'No tag found with this id' });
         return;
       }
-      res.json(dbCategoryData);
+      res.json(dbTagData);
     })
     .catch((err) => {
       console.log(err);
