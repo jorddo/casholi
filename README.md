@@ -16,5 +16,3 @@ When working on this project I learned a lot about using Insomnia to test API ro
 - Run
 
       npm install
-
-## Demo
